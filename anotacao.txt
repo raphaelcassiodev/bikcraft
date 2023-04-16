@@ -6,3 +6,41 @@ EXEMPLO:
 -> esse "bg" representa que sempre terá um background que pega de ponta a ponta
 
 -> Geralmente a logo do site é um link para refresh. Portanto coloque a logo <img> dentro da tag <a href="./"></a>
+
+-> No exemplo de colocar uma margin-bottom negativa na imagem, compreenda que essa margin é em relação ao elemento para (introdução). Tanto é que se a margin crescer, vai criar um espaço na introdução.
+
+->  box-shadow: inset 0 -120px  white;  -- inset defini um valor interno da sombra.
+-> eu defini essa prorpiedade, para a minha introducao-bg ter uma sombra interna com um valor de altura negativo, ou seja, o comportamento da sombra começará embaixo e não em cima.
+
+-> Aumentar o valor do padding foi preciso, senão, causaria uma ilusção de ótica, parencedo que o container estava sendo cortado.
+
+PARA ENTENDER MELHOR, COLOQUE OS VALORES:
+.introducao-bg {
+  background-color: #000000;
+  color: #ffffff;
+  box-shadow: inset 0 -120px red;
+}
+
+.introducao-conteudo {
+  align-self: end;
+  padding-bottom: 80px;
+}
+
+O ORIGINAL FICOU ASSIM:
+.introducao-bg {
+  background-color: #000000;
+  color: #ffffff;
+  box-shadow: inset 0 -120px #ffffff;
+}
+
+.introducao-conteudo {
+  align-self: end;
+  padding-bottom: 200px; -> Valor de 200, pois eu compensei o 80 para 200. Somando 120 + (altura da sombra) + 80 (que seira o padding atual) = 200
+}
+
+.introducao-bg {
+  background-color: #000000;
+  color: #ffffff;
+  box-shadow: inset 0 -120px #ffffff;
+  margin-left: -80px -> Criará uma espécie de padding, a margin funcionará internamente, arrastanto os elementos internamente. ASSISTIA O VÍDEO QUE GRAVOU NO CELULAR COMO EXEMPLO
+}
