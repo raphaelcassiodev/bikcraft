@@ -1,0 +1,8 @@
+Sempre quando tiver um fundo em preto ou em outra cor, que seja diferente da cor original do fundo, e estiver pegando de ponta a ponta, terá que criar uma div para segurar os elementos, logo depois do elemento pai.
+-> Setar a cor de fundo no elemento inicial, que seria o pai.
+
+EXEMPLO:
+>> em class="header-bg"
+-> esse "bg" representa que sempre terá um background que pega de ponta a ponta
+
+-> Geralmente a logo do site é um link para refresh. Portanto coloque a logo <img> dentro da tag <a href="./"></a>
