@@ -44,3 +44,5 @@ O ORIGINAL FICOU ASSIM:
   box-shadow: inset 0 -120px #ffffff;
   margin-left: -80px -> Criará uma espécie de padding, a margin funcionará internamente, arrastanto os elementos internamente. ASSISTIA O VÍDEO QUE GRAVOU NO CELULAR COMO EXEMPLO
 }
+
+-> Analisar quais são os rlementos e componentes globais, geralmente aqueles que são utilizados diversas vezes na navegação do site.
