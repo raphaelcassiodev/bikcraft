@@ -46,3 +46,18 @@ O ORIGINAL FICOU ASSIM:
 }
 
 -> Analisar quais são os rlementos e componentes globais, geralmente aqueles que são utilizados diversas vezes na navegação do site.
+
+
+->CSS Utilitário: quando utilizo uma classe, que vem com diversas propriedades, para utilizar ao longo do site.
+
+-> Esses CSS utilitário servirá principalmente para propriedades de tipogragia:
+-font-size;
+-line-height;
+-font-family;
+-font-weight;
+
+-> E também para cores.
+
+
+OBS.: Para melhor entendimento, começe fazendo esses CSS utilitário e colocando aos poucos em cada parte do site.
+-> Variável (var) é diferente de class utilitária! A variável vocÊ pode utilizar em todo o site, a classe utilitário vocÊ tem que criá-la e atribuir no elemento HTML.
