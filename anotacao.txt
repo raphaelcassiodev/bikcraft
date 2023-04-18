@@ -61,3 +61,32 @@ O ORIGINAL FICOU ASSIM:
 
 OBS.: Para melhor entendimento, começe fazendo esses CSS utilitário e colocando aos poucos em cada parte do site.
 -> Variável (var) é diferente de class utilitária! A variável vocÊ pode utilizar em todo o site, a classe utilitário vocÊ tem que criá-la e atribuir no elemento HTML.
+
+-> Analisar o padrão do site!!!
+
+
+CONTAINER
+.container{
+    max-width: 1200px; -> Valor máximo pré setado para o container. Significa que ele irá crescer no máximo até 1160px, acima disso, não cresce mais.
+    margin: 0 auto; -> Faz com que o container fique centralizado
+    box-sizing: border-box; -> Faz com que o pedding não some o tamanho total
+}
+------------------------------------------------------------------------------------
+IMAGEM - na .introducao-imagem & .tecnologia-imagem
+.tecnologia-imagem img {
+  width: 100%; /* */
+  height: 100%; /*Forçamos esse height 100% para pegar a altura máxima do elemento pai*/
+  object-fit: cover; /*Para que não fique desproporcional*/
+  object-position: left;
+}
+
+Por que do Width: 100%? 
+- No SAFARI não estava respeitando o width. Nisso a imagem quebrava em relação a grid e pegava 100% de altura da página inteira.
+
+
+Obs.: A imagem é grande, portanto ela irá crescer (isso é normal). Caso desejamos que ela seja igualmente o tamanho do contéudo, teria que estar dentro de uma div e usar como background. <img/> crescer mesmo
+-----------------------------------------------------------------------------------
+
+-> Sempre lembrar de configurações globais, aquelas que são gerais para o site ou diretamente em uma determinada teg. Exemplo: tirar padding, margin, text-decoration, etc.
+
+-> SEMPRE LEMBRAR QUE OS ELEMENTOS CRESCEM IFINITAMENTE, SENÃO TIVER UM MAX-WIDTH

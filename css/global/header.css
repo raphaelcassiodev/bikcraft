@@ -9,10 +9,7 @@
   gap: 20px; /*A principio esse gap é imperceptivel, mas quando o flex-wrap: wrap for ativado, será visível tal propriedade*/
   justify-content: space-between;
   align-items: center;
-  box-sizing: border-box; /*Faz com que o pedding não some o tamanho total*/
   padding: 20px;
-  max-width: 1200px; /*Valor máximo pré setado para o container. Significa que ele irá crescer no máximo até 1160px, acima disso, não cresce mais.*/
-  margin: 0 auto; /*Faz com que o container fique centralizado*/
 }
 .header-menu {
   display: flex;

@@ -2,21 +2,22 @@ body {
   margin: 0px;
   font-family: Arial, Helvetica, sans-serif;
   color: #111111;
-  height: 2000px;
+  height: 4000px;
 }
 img {
   max-width: 100%;
   display: block;
 }
 img[src$=".jpg"] {
-  border-radius: 4px;
+  border-radius: 4px; /* Seletor que capta o valor de um atributo, que o final desse valor, seja = ".jpeg" */
 }
 h1,
 h2,
 h3,
 h4,
 ul,
-p {
+p,
+blockquote {
   margin: 0px;
 }
 ul {
