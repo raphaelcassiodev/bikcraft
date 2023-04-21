@@ -90,3 +90,24 @@ Obs.: A imagem é grande, portanto ela irá crescer (isso é normal). Caso desej
 -> Sempre lembrar de configurações globais, aquelas que são gerais para o site ou diretamente em uma determinada teg. Exemplo: tirar padding, margin, text-decoration, etc.
 
 -> SEMPRE LEMBRAR QUE OS ELEMENTOS CRESCEM IFINITAMENTE, SENÃO TIVER UM MAX-WIDTH
+
+
+-> Em um lista, seja UL ou OL, posso definir uma font ou cor diretamente na UL (ou OL), para que funcione em todos os filhos
+
+-> Não tenha medo de explorar o grid! Se exite grid-column ou row, É PARA USAR!!!!!
+
+-> Pode ter padding com números "qubrados", como: 33, 41, 27, 24, 32...
+
+-> Para fazer com que um determinado elemento pare de crescer, defini uma largura maxima
+
+-> Verificar os espaçamentos exatos ao longo do site, como por exemplo: padding, gap, margin, etc
+-----------------------------------------------------------
+EXEMPLO :
+ <div class="termos font-2-s cor-10 container">
+      <h2 class="font-1-l cor-11">1. Política e Estorno</h2>
+      <p>1.1 Aceitamos cartões de crédito com as bandeiras: Visa, Mastercard, ELO e American Express. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</p>
+      <p>1.1 Aceitamos cartões de crédito com as bandeiras: Visa, Mastercard, ELO e American Express. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</p>
+      <p>1.1 Aceitamos cartões de crédito com as bandeiras: Visa, Mastercard, ELO e American Express. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</p>
+  </div>
+
+  -> A font e cor definida na <div> servirá somente para os paragrafos, pois no h2, já tem uma font e cor definida
