@@ -1,0 +1,13 @@
+.termos {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+/* Todo h2 que vem depois de p, vai assumir essas propriedades. */
+.termos p + h2 {
+  font-weight: 600;
+}
+
+.termos p {
+  max-width: 75ch;
+  margin-bottom: 24px;
+}
